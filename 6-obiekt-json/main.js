@@ -19,4 +19,3 @@ jsonPracownicy.pracownicy.forEach((pracownik, index) => {
     console.log(`pracownik: ${pracownik.lastName}   ${pracownik.firstName} posiada index ${index}`)
 } )
 
-console.log(JSON.parse(jsonPracownicy));
