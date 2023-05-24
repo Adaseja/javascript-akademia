@@ -1,14 +1,24 @@
-document.getElementById("animateButton").addEventListener("click", function() {
-    var square = document.getElementById("square");
-    square.classList.add("animate");
-  
-    square.addEventListener("animationend", function() {
-      square.classList.remove("animate");
-      square.classList.add("changeColor");
-  
-      var h2 = document.createElement("h2");
-      h2.innerText = "Animacja zakończona";
-      square.appendChild(h2);
-    }, { once: true });
-  });
-  
+$("#animateButton").click(function () {
+    $("#square").animate({
+        width: "100px",
+        height: "100px",
+        marginLeft: "100px"
+    }
+        , 3000
+
+    )
+    $("#square").animate({
+        backgroundColor: "blue",
+    }
+    , 5000, function() {
+        $("#square").append("<h2>Animacja zakonczona</h2>").css({
+            color: "white",
+            fontSize: "0.8em"
+        })
+    }
+    )
+
+    console.log($("#square"))
+
+
+});
