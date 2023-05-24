@@ -1,0 +1,32 @@
+#square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  
+  #square.animate {
+    animation: moveAndResize 3s forwards;
+  }
+  
+  #square.changeColor {
+    animation: changeColor 5s forwards;
+  }
+  
+  @keyframes moveAndResize {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    100% {
+      transform: translateX(100px) scale(0.5);
+    }
+  }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  
