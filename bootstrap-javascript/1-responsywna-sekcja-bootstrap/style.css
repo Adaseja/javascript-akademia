@@ -14,3 +14,7 @@
 .icon-wrapper i {
     line-height: 1;
 }
+
+span {
+	vertical-align: sub;
+}
