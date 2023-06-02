@@ -10,12 +10,12 @@
   }
 
   .faq-underline:hover {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid gray;
   }
   
-  .faq-question {
+  #faq-question {
     color: orange;
   }
   
-  .faq-question:hover {
+  #faq-question:hover {
     color: gray;}
